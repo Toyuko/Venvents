@@ -1,0 +1,20 @@
+﻿<ion-view hide-tabs hide-nav-bar="true" hide-back-button="true" view-title="<center>TODAY<sub>{{title}}</sub></center>">
+    <ion-content class="has-header; background">
+   <div class="bar bar-header">
+   <a class="button button-icon icon ion-close-round" href="#/home/main" nav-transition="android"></a>  
+    <h1 class="title">Today</h1>
+   <a class="button button-icon icon ion-calendar" href="#/home/calendar" nav-transition="android"></a> 
+    
+</div>
+
+        <ion-list>
+
+        <ion-item class="item item-trns" ng-repeat="t in pieces" > 
+        <div class="enjoy-css">{{ t }}<p ng-repeat="X in eventnumber" style="color: white;text-align: right;padding-right: 30px;">{{ X }}</p></div>
+                  </ion-item> 
+        
+           
+          
+        </ion-list> 
+    </ion-content>
+</ion-view>
